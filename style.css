@@ -1,753 +1,90 @@
-/* ===========================
-   Google Font
-=========================== */
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
 }
-
 body{
-    background:#0f172a;
-    color:#fff;
+background:linear-gradient(135deg,#0F172A,#1E293B);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 }
-
-/* ===========================
-   Navigation
-=========================== */
-
-nav{
-
-    width:100%;
-    height:75px;
-
-    background:#111827;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:0 60px;
-
-    position:sticky;
-
-    top:0;
-
-    z-index:1000;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.4);
-
-}
-
-.logo{
-
-    font-size:28px;
-
-    font-weight:bold;
-
-    color:#38bdf8;
-
-}
-
-.logo i{
-
-    color:#22c55e;
-
-    margin-right:10px;
-
-}
-
-nav ul{
-
-    display:flex;
-
-    list-style:none;
-
-}
-
-nav ul li{
-
-    margin-left:35px;
-
-}
-
-nav ul li a{
-
-    color:white;
-
-    text-decoration:none;
-
-    font-size:18px;
-
-    transition:.3s;
-
-}
-
-nav ul li a:hover{
-
-    color:#38bdf8;
-
-}
-
-/* ===========================
-   Hero Section
-=========================== */
-
-.hero{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:80px;
-
-}
-
-.left{
-
-    width:50%;
-
-}
-
-.left h1{
-
-    font-size:55px;
-
-    margin-bottom:20px;
-
-    color:#38bdf8;
-
-}
-
-.left p{
-
-    font-size:20px;
-
-    color:#cbd5e1;
-
-    margin-bottom:30px;
-
-    line-height:1.7;
-
-}
-
-.left button{
-
-    padding:15px 40px;
-
-    border:none;
-
-    border-radius:50px;
-
-    background:#2563eb;
-
-    color:white;
-
-    font-size:18px;
-
-    cursor:pointer;
-
-    transition:.4s;
-
-}
-
-.left button:hover{
-
-    background:#1d4ed8;
-
-    transform:translateY(-5px);
-
-}
-
-.right{
-
-    width:45%;
-
-    text-align:center;
-
-}
-
-.right img{
-
-    width:100%;
-
-    max-width:500px;
-
-}
-
-/* ===========================
-   Dashboard Cards
-=========================== */
-
-.dashboard{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:25px;
-
-    padding:50px;
-
-}
-
 .card{
-
-    background:#1e293b;
-
-    border-radius:20px;
-
-    padding:35px;
-
-    text-align:center;
-
-    transition:.4s;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.4);
-
+width:500px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:35px;
+border-radius:20px;
+color:white;
+box-shadow:0 0 30px rgba(0,0,0,.4);
 }
-
-.card:hover{
-
-    transform:translateY(-10px);
-
+h1{
+text-align:center;
+margin-bottom:10px;
 }
-
-.card i{
-
-    font-size:40px;
-
-    color:#38bdf8;
-
-    margin-bottom:20px;
-
+.subtitle{
+text-align:center;
+margin-bottom:20px;
+color:#CBD5E1;
 }
-
-.card h3{
-
-    color:#94a3b8;
-
-    margin-bottom:10px;
-
+.status{
+background:#123;
+padding:10px;
+border-radius:10px;
+margin-bottom:20px;
+text-align:center;
 }
-
-.card h2{
-
-    color:white;
-
+.online{
+display:inline-block;
+width:10px;
+height:10px;
+background:#22C55E;
+border-radius:50%;
+margin-right:8px;
 }
-
-/* ===========================
-   Prediction Form
-=========================== */
-
-.prediction{
-
-    width:90%;
-
-    margin:auto;
-
-    background:#1e293b;
-
-    padding:40px;
-
-    border-radius:20px;
-
-    margin-top:40px;
-
+label{
+display:block;
+margin-top:15px;
+margin-bottom:5px;
 }
-
-.prediction h2{
-
-    text-align:center;
-
-    margin-bottom:30px;
-
-    color:#38bdf8;
-
-}
-
-form{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:25px;
-
-}
-
-.input-box{
-
-    display:flex;
-
-    flex-direction:column;
-
-}
-
-.input-box label{
-
-    margin-bottom:8px;
-
-}
-
 input,select{
-
-    padding:15px;
-
-    border:none;
-
-    border-radius:10px;
-
-    background:#334155;
-
-    color:white;
-
-    font-size:16px;
-
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+font-size:16px;
 }
-
-input:focus,
-select:focus{
-
-    outline:2px solid #38bdf8;
-
+button{
+width:100%;
+padding:15px;
+margin-top:25px;
+border:none;
+background:#2563EB;
+color:white;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
 }
-
-form button{
-
-    grid-column:1/3;
-
-    padding:18px;
-
-    border:none;
-
-    border-radius:12px;
-
-    background:#2563eb;
-
-    color:white;
-
-    font-size:20px;
-
-    cursor:pointer;
-
-    transition:.4s;
-
+button:hover{
+background:#1D4ED8;
+transform:scale(1.02);
 }
-
-form button:hover{
-
-    background:#1d4ed8;
-
-}
-
-/* ===========================
-   Result
-=========================== */
-
-.result{
-
-    width:90%;
-
-    margin:40px auto;
-
-    background:#1e293b;
-
-    padding:35px;
-
-    border-radius:20px;
-
-}
-
 #result{
-
-    text-align:center;
-
-    font-size:28px;
-
-    color:#22c55e;
-
-    font-weight:bold;
-
+margin-top:25px;
+background:#0F172A;
+padding:20px;
+border-radius:12px;
+font-size:22px;
+text-align:center;
+font-weight:bold;
 }
-/* ===============================
-   Live Map
-================================ */
-
-.map{
-
-    width:90%;
-
-    margin:60px auto;
-
-}
-
-.map h2{
-
-    text-align:center;
-
-    color:#38bdf8;
-
-    margin-bottom:20px;
-
-}
-
-#map{
-
-    width:100%;
-
-    height:500px;
-
-    border-radius:20px;
-
-    overflow:hidden;
-
-    border:3px solid #38bdf8;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.4);
-
-}
-/* ===========================
-   Traffic Signal
-=========================== */
-
-.traffic-light-section{
-
-    text-align:center;
-
-    margin:60px auto;
-
-}
-
-.traffic-light{
-
-    width:110px;
-
-    background:#222;
-
-    padding:20px;
-
-    border-radius:20px;
-
-    margin:auto;
-
-    box-shadow:0 0 30px rgba(0,0,0,.5);
-
-}
-
-.light{
-
-    width:60px;
-
-    height:60px;
-
-    border-radius:50%;
-
-    margin:15px auto;
-
-    background:#555;
-
-    transition:.5s;
-
-}
-
-.red.active{
-
-    background:red;
-
-    box-shadow:0 0 25px red;
-
-}
-
-.yellow.active{
-
-    background:yellow;
-
-    box-shadow:0 0 25px yellow;
-
-}
-
-.green.active{
-
-    background:lime;
-
-    box-shadow:0 0 25px lime;
-
-}
-/* ===========================
-   Weather Section
-=========================== */
-
-.weather-section{
-
-    width:90%;
-
-    margin:60px auto;
-
-}
-
-.weather-section h2{
-
-    text-align:center;
-
-    color:#38bdf8;
-
-    margin-bottom:25px;
-
-}
-
-.weather-card{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:40px;
-
-    background:#1e293b;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.4);
-
-}
-
-.weather-icon{
-
-    font-size:80px;
-
-}
-
-.weather-details h3{
-
-    font-size:32px;
-
-    color:#38bdf8;
-
-}
-
-.weather-details p{
-
-    margin-top:10px;
-
-    font-size:18px;
-
-}
-/* ===========================
-   Live Statistics
-=========================== */
-
-.stats-section{
-
-    width:90%;
-
-    margin:60px auto;
-
-}
-
-.stats-section h2{
-
-    text-align:center;
-
-    color:#38bdf8;
-
-    margin-bottom:30px;
-
-}
-
-.stats-container{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:25px;
-
-}
-
-.stat-card{
-
-    background:#1e293b;
-
-    padding:30px;
-
-    text-align:center;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.4);
-
-    transition:.3s;
-
-}
-
-.stat-card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-.stat-card h1{
-
-    color:#22c55e;
-
-    margin-top:15px;
-
-    font-size:40px;
-
-}
-.about{
-    text-align: center;
-    color: white;
-    text-decoration: dotted;
-}
-function predictTraffic() {
-
-    // ==========================
-    // Get Values From Form
-    // ==========================
-
-    let day = document.getElementById("day").value;
-
-    let hour = document.getElementById("hour").value;
-
-    let temp = document.getElementById("temp").value;
-
-    let weather = document.getElementById("weather").value;
-
-    let carCount = document.getElementById("carCount").value;
-
-    let bikeCount = document.getElementById("bikeCount").value;
-
-    let busCount = document.getElementById("busCount").value;
-
-    let truckCount = document.getElementById("truckCount").value;
-
-
-    // ==========================
-    // Check Empty Inputs
-    // ==========================
-
-    if (
-        hour === "" ||
-        temp === "" ||
-        carCount === "" ||
-        bikeCount === "" ||
-        busCount === "" ||
-        truckCount === ""
-    ) {
-
-        document.getElementById("result").innerHTML =
-            "⚠️ Please fill all fields";
-
-        return;
-    }
-
-
-    // ==========================
-    // Show Loading
-    // ==========================
-
-    document.getElementById("result").innerHTML =
-        "⏳ Predicting traffic...";
-
-
-    // ==========================
-    // Send Data To Flask
-    // ==========================
-
-    fetch("/predict", {
-
-        method: "POST",
-
-        headers: {
-            "Content-Type": "application/json"
-        },
-
-        body: JSON.stringify({
-
-            day: day,
-
-            hour: hour,
-
-            temp: temp,
-
-            weather: weather,
-
-            carCount: carCount,
-
-            bikeCount: bikeCount,
-
-            busCount: busCount,
-
-            truckCount: truckCount
-
-        })
-
-    })
-
-
-    // ==========================
-    // Convert Response
-    // ==========================
-
-    .then(response => {
-
-        if (!response.ok) {
-
-            throw new Error("Server Error");
-
-        }
-
-        return response.json();
-
-    })
-
-
-    // ==========================
-    // Display Prediction
-    // ==========================
-
-    .then(data => {
-
-        if (data.error) {
-
-            throw new Error(data.error);
-
-        }
-
-
-        document.getElementById("result").innerHTML =
-
-            "🚦 Traffic Status : " + data.traffic;
-
-    })
-
-
-    // ==========================
-    // Handle Error
-    // ==========================
-
-    .catch(error => {
-
-        console.error("Prediction Error:", error);
-
-        document.getElementById("result").innerHTML =
-
-            "❌ Prediction Failed<br>" +
-            "<small>" + error.message + "</small>";
-
-    });
-
+.footer{
+margin-top:20px;
+display:flex;
+justify-content:space-between;
+font-size:14px;
+color:#94A3B8;
 }
