@@ -7,10 +7,8 @@ app = Flask(__name__)
 # Load ML Model
 # ==========================
 
-model = joblib.load("model/traffic_model.pkl")
-
-# Load Label Encoders
-label_encoders = joblib.load("model/label_encoders.pkl")
+model = joblib.load("traffic_model.pkl")
+label_encoders = joblib.load("label_encoders.pkl")
 
 
 # ==========================
